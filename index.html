@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
+
 <body>
-    
+    <style type="text/tailwindcss">
+        @theme{
+            --color-button:#2563EB;
+            --color-text:#0F172A;
+            --roboto:"Roboto";
+            --color-seondaire:#FFFFFF;
+        }
+
+    </style>
+    <header>
+        <nav class="flex justify-between p-4">
+            <a class="text-2xl font-[Roboto]  text-text" href="#">magnifico</a>
+            <div class="hidden lg:block lg:flex p-2 gap-20">
+                <select class="text-sm font-[Roboto] text-text  ">
+                    <option>Products</option>
+                </select>
+                <select class="text-sm font-[Roboto] text-text  ">
+                    <option>Products</option>
+                </select>
+                <select class="text-sm font-[Roboto] text-text  ">
+                    <option>Services</option>
+                </select>
+                <select class="text-sm font-[Roboto] text-text ">
+                    <option>Help Center</option>
+                </select>
+                <select class="text-sm font-[Roboto] text-text cursor-pointa ">
+                    <option>Pricing</option>
+                </select>
+            </div>
+            <div class="lg:hidden h-8 w-8"><img src="assets/images/menu.png" alt="menu"></div>
+            <div class="lg:flex gap-20 hidden lg:block">
+                <div class="flex gap-5">
+                    <a class="text-sm font-[Roboto] p-2 text-button " href="#">Log In</a>
+                    <button class="border-2 w-30 h-10 rounded-2xl  bg-button  cursor-pointa text-seondaire text-sm">Sign Up Free</button>
+                </div>
+            </div>
+
+
+
+
+        </nav>
+    </header>
 </body>
+
 </html>
